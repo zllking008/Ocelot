@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotDemo", "OcelotDemo\OcelotDemo.csproj", "{1F723FB7-AC65-4FCE-923A-4E6B4C7717AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoodsApi", "GoodsApi\GoodsApi.csproj", "{88D2F621-847E-48D0-97BC-D488D269C5AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderApi", "OrderApi\OrderApi.csproj", "{E8E862D7-6B92-45F3-BD68-2384E218C579}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F723FB7-AC65-4FCE-923A-4E6B4C7717AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F723FB7-AC65-4FCE-923A-4E6B4C7717AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F723FB7-AC65-4FCE-923A-4E6B4C7717AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F723FB7-AC65-4FCE-923A-4E6B4C7717AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88D2F621-847E-48D0-97BC-D488D269C5AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88D2F621-847E-48D0-97BC-D488D269C5AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88D2F621-847E-48D0-97BC-D488D269C5AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88D2F621-847E-48D0-97BC-D488D269C5AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8E862D7-6B92-45F3-BD68-2384E218C579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8E862D7-6B92-45F3-BD68-2384E218C579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8E862D7-6B92-45F3-BD68-2384E218C579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8E862D7-6B92-45F3-BD68-2384E218C579}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D4DFFA6-1A05-4766-BB75-363559B7C69B}
+	EndGlobalSection
+EndGlobal
