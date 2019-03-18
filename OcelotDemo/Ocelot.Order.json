@@ -1,0 +1,18 @@
+{
+    "ReRoutes":[{
+        "DownstreamPathTemplate":"/api/Orders/{id}",
+        "DownstreamScheme":"http",
+        "DownstreamHostAndPorts":[
+            {
+                "Host":"localhost",
+                "Port":1002
+            }
+        ],
+    
+        "UpstreamPathTemplate":"/api/Order/{id}",
+        "UpstreamHttpMethod":["Get","Post"],
+        "Key":"Order",
+        "Priority":2
+    }]
+    
+}

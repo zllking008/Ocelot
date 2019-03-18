@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Ocelot.DependencyInjection;
 
 namespace OcelotDemo
 {
@@ -19,6 +20,15 @@ namespace OcelotDemo
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration((hostingContext,config)=>{
+                config.SetBasePath(hostingContext.HostingEnvironment.ContentRootPath)
+                .AddJsonFile("appsettings.json", true, true)
+                .AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", true, true)
+                
+                .AddOcelot(hostingContext.HostingEnvironment)
+                .AddEnvironmentVariables();
+            })
+            .UseUrls("http://localhost:1000")
                 .UseStartup<Startup>();
     }
 }
